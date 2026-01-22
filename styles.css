@@ -567,7 +567,53 @@ img{ max-width:100%; height:auto; display:block; }
   .productGrid{ grid-template-columns:1fr; }
   .productCard__img{ height:220px; }
 }
+/* ===== MOBILE HEADER FIX ===== */
+@media (max-width: 768px) {
+  .header__inner {
+    padding: 8px 0;
+  }
 
+  .brand {
+    gap: 8px;
+  }
+
+  .brand__mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand__name {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  .brand__tag {
+    font-size: 10px;
+  }
+}
+
+/* ===== MOBILE HERO VISIBILITY FIX ===== */
+@media (max-width: 768px) {
+  .heroOverlay {
+    bottom: 12px;
+  }
+
+  .heroSlider {
+    min-height: 300px;
+  }
+}
+
+/* ===== OPTIONAL: SHRINK HERO PANEL ===== */
+@media (max-width: 768px) {
+  .heroOverlay > .heroOverlay__panel {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .heroOverlay h1 {
+    font-size: 26px;
+  }
+}
 /* =========================
    FOOTER
    ========================= */
