@@ -614,6 +614,44 @@ img{ max-width:100%; height:auto; display:block; }
     font-size: 26px;
   }
 }
+/* ===== MOBILE HEADER SHRINK (FINAL FIX) ===== */
+@media (max-width: 768px) {
+  .header {
+    padding: 0;
+  }
+
+  .header__inner {
+    padding: 6px 0;
+    min-height: unset;
+  }
+
+  .brand {
+    gap: 6px;
+  }
+
+  .brand__mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .brand__name {
+    font-size: 13px;
+    line-height: 1;
+  }
+
+  .brand__tag {
+    font-size: 9px;
+  }
+
+  /* Push hero content higher so image is visible */
+  .heroOverlay {
+    bottom: 10px;
+  }
+
+  .heroSlider {
+    min-height: 280px;
+  }
+}
 /* =========================
    FOOTER
    ========================= */
