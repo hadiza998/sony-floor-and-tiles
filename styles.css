@@ -318,9 +318,9 @@ img{ max-width:100%; height:auto; display:block; }
 .hero__actions{ display:flex; gap:10px; flex-wrap:wrap; }
 
 @media (max-width: 768px){
-  .heroSlide{ min-height: 340px; }
+  .heroSlide{ min-height: 380px; }
   .heroSlide__img{ height:340px; }
-  .heroOverlay{ bottom:16px; }
+  .heroOverlay{ bottom:8px; }
   .heroOverlay__panel{ padding:14px 14px 12px; border-radius:14px; }
   .heroOverlay h1{ font-size:28px; line-height:1.15; }
   .heroOverlay .lead{ font-size:14px; line-height:1.4; }
