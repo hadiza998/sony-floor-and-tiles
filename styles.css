@@ -284,26 +284,18 @@ img{ max-width:100%; height:auto; display:block; }
   bottom:28px;
   z-index:3;
 }
-.heroOverlay__panel{
-  max-width:960px;
-  margin:0 auto;
-  padding:18px 18px 16px;
-  border-radius:16px;
-  background: rgba(246,244,241,.86);
-  border: 1px solid rgba(222,218,212,.9);
-  box-shadow: 0 16px 40px rgba(0,0,0,.10);
-  backdrop-filter: blur(8px);
+.heroOverlay__panel {
+  max-width: 720px;              /* smaller card */
+  padding: 14px 16px;            /* tighter spacing */
+  border-radius: 14px;
+
+  background: rgba(246,244,241,.72);  /* more transparent */
+  border: 1px solid rgba(222,218,212,.6);
+
+  box-shadow: 0 12px 28px rgba(0,0,0,.08);
+  backdrop-filter: blur(10px);
 }
-.heroOverlay__kicker{
-  display:inline-flex;
-  padding:6px 10px;
-  border-radius:999px;
-  background: rgba(255,255,255,.70);
-  border: 1px solid rgba(222,218,212,.95);
-  color: rgba(31,31,31,.75);
-  font-size:12px;
-  font-weight:800;
-}
+
 .heroOverlay h1{
   margin:6px 0 10px;
   font-size:42px;
@@ -567,91 +559,27 @@ img{ max-width:100%; height:auto; display:block; }
   .productGrid{ grid-template-columns:1fr; }
   .productCard__img{ height:220px; }
 }
-/* ===== MOBILE HEADER FIX ===== */
-@media (max-width: 768px) {
-  .header__inner {
-    padding: 8px 0;
-  }
 
-  .brand {
-    gap: 8px;
-  }
-
-  .brand__mark {
-    width: 36px;
-    height: 36px;
-  }
-
-  .brand__name {
-    font-size: 14px;
-    line-height: 1.1;
-  }
-
-  .brand__tag {
-    font-size: 10px;
-  }
-}
-
-/* ===== MOBILE HERO VISIBILITY FIX ===== */
+/* =========================
+   HERO SLIDER + GLASS PANEL
+   ========================= */
 @media (max-width: 768px) {
   .heroOverlay {
-    bottom: 12px;
+    bottom: 16px;
   }
 
-  .heroSlider {
-    min-height: 300px;
+  .heroOverlay__panel {
+    max-width: 100%;
+    margin: 0 12px;
+    padding: 12px 14px;
+    background: rgba(246,244,241,.65);
+  }
+
+  .heroOverlay__panel h1 {
+    font-size: 1.4rem;
   }
 }
 
-/* ===== OPTIONAL: SHRINK HERO PANEL ===== */
-@media (max-width: 768px) {
-  .heroOverlay > .heroOverlay__panel {
-    padding: 12px;
-    border-radius: 14px;
-  }
-
-  .heroOverlay h1 {
-    font-size: 26px;
-  }
-}
-/* ===== MOBILE HEADER SHRINK (FINAL FIX) ===== */
-@media (max-width: 768px) {
-  .header {
-    padding: 0;
-  }
-
-  .header__inner {
-    padding: 6px 0;
-    min-height: unset;
-  }
-
-  .brand {
-    gap: 6px;
-  }
-
-  .brand__mark {
-    width: 32px;
-    height: 32px;
-  }
-
-  .brand__name {
-    font-size: 13px;
-    line-height: 1;
-  }
-
-  .brand__tag {
-    font-size: 9px;
-  }
-
-  /* Push hero content higher so image is visible */
-  .heroOverlay {
-    bottom: 10px;
-  }
-
-  .heroSlider {
-    min-height: 280px;
-  }
-}
 /* =========================
    FOOTER
    ========================= */
